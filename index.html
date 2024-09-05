@@ -10,18 +10,23 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
         }
         header {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
+        header img {
+            width: 120px;
+            height: auto;
+            vertical-align: middle;
+        }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #004080;
         }
         nav a {
             color: #fff;
@@ -31,7 +36,7 @@
             display: block;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #00509e;
         }
         .container {
             width: 80%;
@@ -43,26 +48,27 @@
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
         footer {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
         .contact-form input,
         .contact-form textarea {
-            width: 100%;
+            width: calc(100% - 22px);
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
         .contact-form button {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             border: none;
             padding: 10px 15px;
@@ -70,12 +76,13 @@
             cursor: pointer;
         }
         .contact-form button:hover {
-            background-color: #555;
+            background-color: #00509e;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo-placeholder.png" alt="Market Insights Logo">
         <h1>Market Insights</h1>
         <p>Your source for expert research and investment advice</p>
     </header>
@@ -127,7 +134,7 @@
         <div id="contact" class="main-content">
             <h2>Contact Us</h2>
             <p>Get in touch with us for any inquiries or additional information.</p>
-            <form class="contact-form">
+            <form class="contact-form" action="mailto:agarwal.vaibhav3007@gmail.com" method="post" enctype="text/plain">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
